@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Website Template: https://www.w3schools.com/howto/howto_website_bootstrap.asp --> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="projects.css">
+  <title>Uniqlo Kiosk</title>
+</head>
+<body>
+
+<!-- Progress Scroll Bar: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp --> 
+<div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
+
+<!-- Image: https://www.themds.com/companies/uniqlo-grows-in-zaras-kingdom-studies-partnership-with-el-corte-ingles.html --> 
+<img class="header-image" src="./assets/uniqloheader.svg" alt="uniqlo store"> 
+<div class="container">
+  <h1>Uniqlo Self-Checkout Kiosk</h1>
+  <h5>PROJECT OVERVIEW</h5>
+  <p>For this project, I chose to study the self-checkout kiosk at Uniqlo, a Japanese casual wear clothing store. I observed real users interacting with the interface,
+    interviewed these individuals about their experiences, created personas based on these users, and
+    illustrated a storyboard for one of the personas.</p> 
+
+    <div class="pill">Personas</div>
+    <div class="pill">Storyboarding</div>
+    <div class="pill">UX Research</div>
+    <div class="pill">User Interviews</div>
+</div>
+
+<div class="container">
+      <br>
+      <h2>Part 1 : Interface</h2>
+      <div class="project-section-title-bar"></div> 
+      <h5>INTERFACE SKETCH & DESCRIPTION</h5>
+      <p>
+         The kiosk is composed of a bin to place clothing items, a checkout tablet, a card reader, and a receipt printer. 
+         Customers 1) place all clothing items into the bin (which automatically scans
+         them using RFID technology), 2) press "Start" on the tablet, 3) confirm the number of items is correct, 4) select payment and obtain receipt, and 5) bag items. 
+         This interface solves the issue of users having to scan each individual item, creating a streamlined and enjoyable experience. 
+      </p>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/sketch.jpg" alt="sketch" width=60%>
+      </div>
+      <br>
+
+      <h2>Part 2 : Research</h2>
+      <div class="project-section-title-bar"></div> 
+      <h5>OBSERVATIONS</h5>
+      <p>First, I objectively observed how users interacted with the kiosk. I was also able to
+        record a friend using the interface to capture each screen on the tablet. I recorded the following
+        observations:
+      </p>
+      <ul>
+        <li>Users often had intrigued, impressed, or excited expressions to the automatic scanning.</li>
+        <li>Users typically spent around 3-5 minutes to complete the entire checkout process.</li>
+        <li>Very few customers required staff to help figure out the kiosk.</li>
+      </ul>
+      <h5>INTERVIEW QUESTIONS & ANSWERS</h5>
+      <p>I then conducted interviews with 3 different users to gain a deeper understanding of
+        their motives, experiences, and expectations when using the kiosk. From the 5 questions asked,
+        I aggregated the most common responses. 
+      </p>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/questions.png" alt="interview questions" width=100%>
+      </div>
+      <br>
+
+      <h2>Part 3 : Personas</h2>
+      <div class="project-section-title-bar"></div> 
+      <h5>PERSONAS</h5>
+      <p>Based on observations and user interviews, I created two personas that represent achetypes of people who typically use this kiosk. 
+        These personas are represented through a "Thinks, Feels, Says, Does" empathy map.</p>
+      <div class="banner-image">
+        <!-- Icons: href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Creartive - Flaticon --> 
+        <img class="gallery-item" src="./assets/personas.png" alt="personas" width=100%>
+      </div>
+      <br>
+
+      <h2>Part 4: Storyboard</h2>
+      <div class="project-section-title-bar"></div> 
+      <h5>STORYBOARD</h5>
+      <p>Using the "Efficient Eddie" persona, I created a storyboard mapping out his user journey from start to end.</p>
+    <div class="banner-image">
+      <img class="gallery-item" src="./assets/storyboard.png" alt="storyboard" width=110%>
+    </div>
+    <br>
+    <br>
+    </div>
+</body>
+</html>

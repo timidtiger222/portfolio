@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Website Template: https://www.w3schools.com/howto/howto_website_bootstrap.asp --> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="projects.css">
+  <title>Pixel Pack</title>
+</head>
+<body>
+
+<!-- Progress Scroll Bar: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp --> 
+<div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
+
+<!-- Image: http://zaagitravel.com/tag/ice-cream/ --> 
+<img class="header-image" src="./assets/developmentheader.svg"> 
+<div class="container">
+  <h1>Pixel Pack</h1>
+  <h5>PROJECT DESCRIPTION</h5>
+  <p>The goal of this project was to develop an interactive interface, use interface components, and tie the components to an internal data state. 
+    Using React, I created a list-based interface. Basically, an interface for users to select items out of a list, which then aggregates them. I 
+  decided to make an application that mimics a cute Pokemon-style "Choose your team" interface.</p> 
+  <div class="pill">React</div>
+  <div class="pill">CSS</div>
+</div>
+
+<div class="container">
+      <br>
+      <h2>Part 1 : Application Features</h2>
+      <div class="project-section-title-bar"></div> 
+      
+      <h5>FILTER</h5>
+      <p>Users can filter based on the dogs' size or specialty by clicking on the filters on the leftside bar.</p>
+      <img class="banner-image" src="./assets/filter.gif"> 
+
+      <h5>SORT</h5>
+      <p>Users can sort the dogs from lowest HP to highest on the leftside bar.</p>
+      <img class="banner-image" src="./assets/sort.gif"> 
+
+      <h5>ADD TO TEAM</h5>
+      <p>Users can add dogs to their team (aggregated on the leftside bar) by clicking on the "Add to Team" button. They can 
+        also remove dogs by clicking on the "Remove from Team" button. The team's total HP is displayed underneath.</p>
+        <img class="banner-image" src="./assets/add.gif"> 
+      
+      <br>
+      <h2>Part 2 : Final Application</h2>
+      <div class="project-section-title-bar"></div> 
+
+      <p>You can view the final application by clicking on the button below!
+      </p>
+
+      <a href="https://timidtiger222.github.io/development/"target="_blank"><button>VISIT WEBPAGE</button></a>
+
+      <h5>CONCLUSION</h5>
+      <p>This project was really fun to express creativity and work with an aesthetic that I personally find very nostalgic. 
+        I learned how to use React for the first time, and gained experience with using use states and props.
+      </p>
+
+      <br>
+      <br>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Website Template: https://www.w3schools.com/howto/howto_website_bootstrap.asp --> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="projects.css">
+  <title>Capsule App</title>
+</head>
+<body>
+
+<!-- Progress Scroll Bar: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp --> 
+<div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
+
+
+<img class="header-image" src="./assets/capsuleheader.svg"> 
+<div class="container">
+  <h1>Capsule App</h1>
+  <h5>PROJECT OVERVIEW</h5>
+  <p>For this project, I worked in a group with 3 other students to design an interactive interface for an emerging startup. 
+    Our team went through the full process of mocking up a solution to the startup's concept. 
+    This project is split into four parts to exemplify an iterative design process flow: 
+    (1) sketching ideas of the interface, (2) creating an interactive, high-fidelity prototype, 
+    (3) conducting user testing on a final, revised prototype, and (4) contacting the start up. </p> 
+    <div class="pill">Sketching</div>
+    <div class="pill">Lo-Fi Wireframing</div>
+    <div class="pill">Hi-Fi Prototyping</div>
+    <div class="pill">User Interviews</div>
+    <div class="pill">Iterative Design</div>
+</div>
+
+<div class="container">
+      <br>
+      <h2>Part 1 : Sketching & Wireframing</h2>
+      <div class="project-section-title-bar"></div> 
+      
+      <h5>PRE-DESIGN THINKING</h5>
+      <p>The startup that we chose to design a prototype for is called <u> CAPSULE</u>. 
+      The idea behind this start up is to upload or take a photo of an item to a platform, 
+      then receive links to purchase this item.
+      </p>
+      <p>
+        We thought the best interface for this goal would be to design a mobile app because
+        phones normally have cameras which would make it easy to take a photo, and they have photo
+        albums where the users can chose a photo to upload.
+      </p>
+      <p>
+        The users that would be impacted by our interface would be the normal everyday consumers
+        because this service is targeted to people who want to buy certain items. Thus,
+        this app would cater to users who want to purchase an item that they have seen before.
+      </p>
+ 
+      <h5>SKETCHING</h5>
+      <p>Our group first individually brainstormed 4 possible designs for our startup's app. We each sketched out the 3
+        main screens--home, find item, and results--on pen and paper.
+      </p>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/sketches.png" alt="sketches" width=90%>
+      </div>
+      
+      <h5>COMBINING IDEAS INTO WIREFRAME</h5>
+      <p>After our discussion, we combined the sketches through the following design choices:
+        <ul>
+          <li>
+            For the home page we decided to make the home screen not a login screen which 
+            a user may encounter when they first get the app. Instead we decided to make the 
+            home page that the user would expect to see if they had used the app before.
+          </li>
+          <li>
+            The designs for the upload screen and the results screen were relatively similar
+            across all the sketches so we refined those sketches to make them more cohesive.
+          </li>
+        </ul>
+      </p>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/lowficapsule.png" alt="lowfi prototype" width=90%>
+      </div>
+
+      <br>
+
+      <h2>Part 2 : Mockups</h2>
+      <div class="project-section-title-bar"></div> 
+      
+      <h5>INTERACTIVE HIGH FIDELITY MOCKUP V1</h5>
+      <p>This is the first version of our mockup.</p>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/highfiv1.png" alt="usability analysis" width=85%>
+      </div>
+
+      <br>
+      
+      <a href="https://www.figma.com/proto/ueyfcHzIOqNaDh4eWByOjz/CS1300-Iterative-Assignment?node-id=1%3A23&scaling=scale-down&page-id=2%3A21&starting-point-node-id=1%3A23"target="_blank"><button>VIEW V1 PROTOTYPE</button></a>
+      
+      <h5>MOCKUP CRIT</h5>
+      <p>We received the following feedback from the mockup critique:</p>
+      <ul>
+        <li>
+          In the home page, the "FIND ITEM" verbiage was not conducive
+          to what the button was trying to do.
+        </li>
+        <li>
+          Allow for accessibility to take/upload a picture no 
+          matter where they are in the app (like TikTok's plus 
+          button at the bottom bar)
+        </li>
+        <li>
+          The icons on the navbar should
+          change color when the user is actively on that page. For example, the home page icon would be a different
+          color when the users are on the home page of the app.
+        </li>
+        <li>
+          The save button is slightly too small to easily press on it in the mobile screen.
+        </li>
+      </ul>
+
+      <h5>INTERACTIVE HIGH FIDELITY MOCKUP V2</h5>
+      <p>This is the second iteration of our mockup based on the feedback we recieved.</p>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/highfiv2.png" alt="usability analysis" width=85%>
+      </div>
+
+      <a href="https://www.figma.com/proto/ueyfcHzIOqNaDh4eWByOjz/CS1300-Iterative-Assignment?node-id=123%3A7&scaling=scale-down&page-id=123%3A6&starting-point-node-id=123%3A7"target="_blank"><button>VIEW V2 PROTOTYPE</button></a>
+      
+    
+      <br>
+
+      <h2>Part 3 : User Testing</h2>
+      <div class="project-section-title-bar"></div> 
+
+      <h5>LINKS TO RECORDINGS</h5>
+      <p>Through usertesting.com, we gathered the insights, confusions, and opinions of 3 random participants. You can view 
+        their audio and video recordings below.
+      </p>
+      <p><a href="https://app.usertesting.com/v/460696ea-3693-4d9a-aadc-39755a211c7c?encrypted_video_handle=5d727f8d-72eb-4560-8a8b-b45a1e314734#!/answers&shared_via=link"><button>USER 1</button></a> 
+        <a href="https://app.usertesting.com/v/b91b2371-0013-45a4-be18-3bd8bc5fdf07?back=https%3A%2F%2Fapp.usertesting.com%2Fdashboard#!/answers&shared_via=link"><button>USER 2</button></a> 
+        <a href="https://app.usertesting.com/v/c975427a-e25e-462b-afa9-43534c9a008d?encrypted_video_handle=cd68c144-a8c1-485e-ad84-3323903b3a20#!/answers&shared_via=link"><button>USER 3</button></a>
+      </p>
+
+      <h5>ANALYSIS OF RESULTS</h5>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/tasks.png" alt="usability analysis" width=90%>
+      </div>
+
+      <br>
+
+      <h5>CONCLUSION</h5>
+      <p>Based on the task results and the answers from the post-study questions, we brainstormed 4 potential design changes we would make in a future iteration.</p>
+      <div class="banner-image">
+        <img class="gallery-item" src="./assets/questionscapsule.png" alt="usability analysis" width=90%>
+      </div>
+
+      <br>
+      <br>
+    </div>
+
+</body>
+</html>
+
